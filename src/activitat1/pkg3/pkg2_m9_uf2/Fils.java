@@ -9,8 +9,10 @@ public class Fils {
         this.numComprovar = numero;
     } 
     
-    public boolean run(){
-        return (numComprovar % 1 == 0 && numComprovar % numComprovar == 0);
+    public void run(){
+        if(numComprovar % 1 == 0 && numComprovar % numComprovar == 0){
+            System.out.println(numComprovar + " és primo.");
+        }
     }
     
 }
