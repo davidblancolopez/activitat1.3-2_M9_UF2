@@ -1,20 +1,27 @@
-
 package activitat1.pkg3.pkg2_m9_uf2;
 
+public class Fils implements Runnable {
 
-public class Fils implements Runnable{
-   int numComprovar;
-   
-    public Fils(int numero){
+    int numComprovar;
+
+    public Fils(int numero) {
         this.numComprovar = numero;
-    } 
+    }
 
+    public void run() {
+        int contador = 2;
+        boolean primo = true;
 
-    
-    public void run(){
-        if(numComprovar % 1 == 0 && numComprovar % numComprovar == 0){
-            System.out.println(numComprovar + " és primo.");
+        while ((primo) && (contador != numComprovar)) {
+            if (numComprovar % contador == 0) {
+                primo = false;
+            }
+            contador++;
+        }
+        
+        if (primo) {
+            System.out.println(numComprovar + " es un numero primo.");
         }
     }
-    
+
 }

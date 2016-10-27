@@ -19,13 +19,24 @@ public class Activitat132_M9_UF2 {
         
         ScheduledExecutorService executor = (ScheduledExecutorService) Executors.newScheduledThreadPool(numero);
         
+        for (int i = 2; i < 1000; i++) {
         
-        for (int i = 0; i <= numero; i++) {
+        Fils fils = new Fils(i);
+        executor.scheduleWithFixedDelay(fils, 1, 1, TimeUnit.SECONDS);
+        }
+        
+        /*
+        if (numero > 1) {
+        for (int i = numero + 1; i <= numero; i++) {
             for (int j = numero * 1000; j < (numero + 1) * 1000; j++) {
                 Fils fils = new Fils(j);
                 executor.scheduleWithFixedDelay(fils, 0, 0, TimeUnit.SECONDS);
             }
         }
+        }*/
+        
+        
+        
     }
     
 }
