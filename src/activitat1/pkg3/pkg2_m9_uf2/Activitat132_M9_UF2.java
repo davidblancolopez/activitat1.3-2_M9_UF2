@@ -4,6 +4,7 @@ package activitat1.pkg3.pkg2_m9_uf2;
 import java.util.Scanner;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 
 public class Activitat132_M9_UF2 {
@@ -21,7 +22,8 @@ public class Activitat132_M9_UF2 {
         
         for (int i = 0; i <= numero; i++) {
             for (int j = numero * 1000; j < (numero + 1) * 1000; j++) {
-                Fils fils = new Fils(numero);
+                Fils fils = new Fils(j);
+                executor.scheduleWithFixedDelay(fils, 0, 0, TimeUnit.SECONDS);
             }
         }
     }

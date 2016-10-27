@@ -2,7 +2,7 @@
 package activitat1.pkg3.pkg2_m9_uf2;
 
 
-public class Fils {
+public class Fils implements Runnable{
    int numComprovar;
    
     public Fils(int numero){
