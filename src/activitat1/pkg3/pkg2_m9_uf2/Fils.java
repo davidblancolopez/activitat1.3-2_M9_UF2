@@ -9,9 +9,6 @@ public class Fils {
         this.numComprovar = numero;
     } 
 
-    Fils() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 
     
     public void run(){

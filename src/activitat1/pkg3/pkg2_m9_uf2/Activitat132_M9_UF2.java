@@ -21,7 +21,7 @@ public class Activitat132_M9_UF2 {
         
         for (int i = 0; i <= numero; i++) {
             for (int j = numero * 1000; j < (numero + 1) * 1000; j++) {
-                Fils fils = new Fils();
+                Fils fils = new Fils(numero);
             }
         }
     }
