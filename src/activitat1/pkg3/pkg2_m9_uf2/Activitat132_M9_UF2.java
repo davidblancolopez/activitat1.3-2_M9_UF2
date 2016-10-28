@@ -28,7 +28,7 @@ public class Activitat132_M9_UF2 {
             }
             
             for (int j = i; j < contador + 1000; j++) {
-                
+                executor.submit(Fils(j));
             }
         }
         

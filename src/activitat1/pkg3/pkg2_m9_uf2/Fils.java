@@ -8,6 +8,7 @@ public class Fils implements Runnable {
         this.numComprovar = numero;
     }
 
+
     public void run() {
         int contador = 2;
         boolean primo = true;
