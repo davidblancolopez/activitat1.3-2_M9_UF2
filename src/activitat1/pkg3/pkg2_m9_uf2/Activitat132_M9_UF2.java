@@ -12,8 +12,13 @@ public class Activitat132_M9_UF2 {
 
 
     public static void main(String[] args) {
-        int contador = 3;
+        Scanner lector = new Scanner(System.in);
+        int contador = 0;
         int inicio, fin;
+        
+        //Hacemos que el usuario introduzca el numero.
+        System.out.println("Introduce un numero");
+        contador = lector.nextInt();
         
         //Bucle que creara un objeto fil tantas veces como el numero que se le indica en contador.
         for (int i = 1; i <= contador; i++) {

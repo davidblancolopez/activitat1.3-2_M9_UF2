@@ -13,7 +13,7 @@ public class Fils implements Runnable {
     }
 
     
-    //Metodo para comprobar Si numero es primo
+    //Metodo para comprobar si el numero es primo
     @Override
     public void run() {
         for (int i = inicio + 2; i <= fin; i++) {
