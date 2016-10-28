@@ -4,6 +4,7 @@ package activitat1.pkg3.pkg2_m9_uf2;
 import java.util.Scanner;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 
@@ -17,24 +18,15 @@ public class Activitat132_M9_UF2 {
         System.out.println("Introdueix un numero: ");
         numero = lector.nextInt();
         
-        ScheduledExecutorService executor = (ScheduledExecutorService) Executors.newScheduledThreadPool(numero);
+        ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(3);
         
         
-        for (int i = 2; i < 1000; i++) {
-        
-        Fils fils = new Fils(i);
-        executor.scheduleWithFixedDelay(fils, 1, 1, TimeUnit.SECONDS);
-        }
-        
-        /*
-        if (numero > 1) {
-        for (int i = numero + 1; i <= numero; i++) {
-            for (int j = numero * 1000; j < (numero + 1) * 1000; j++) {
-                Fils fils = new Fils(j);
-                executor.scheduleWithFixedDelay(fils, 0, 0, TimeUnit.SECONDS);
+        for (int i = 1; i < numero; i++) {
+            
+            for (int j = 0; j < 10; j++) {
+                
             }
         }
-        }*/
         
         
         

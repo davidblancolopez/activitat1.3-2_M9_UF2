@@ -20,7 +20,7 @@ public class Fils implements Runnable {
         }
         
         if (primo) {
-            System.out.println(numComprovar + " es un numero primo." + Thread.currentThread().getId());
+            System.out.println(numComprovar + " es un numero primo.");
         }
     }
 
