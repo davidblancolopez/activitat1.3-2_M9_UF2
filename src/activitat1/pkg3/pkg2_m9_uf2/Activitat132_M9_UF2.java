@@ -18,12 +18,12 @@ public class Activitat132_M9_UF2 {
         System.out.println("Introdueix un numero: ");
         numero = lector.nextInt();
         
-        ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(3);
+        ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(numero);
         
         
         for (int i = 1; i < numero; i++) {
             
-            for (int j = 0; j < 10; j++) {
+            for (int j = i; j < i + 1000; j++) {
                 
             }
         }
