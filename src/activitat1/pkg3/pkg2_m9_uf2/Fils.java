@@ -11,17 +11,18 @@ public class Fils implements Runnable {
         this.fin = fin;
     }
     
-    @Override
     
+    //Metodo para comprobar Si numero es primo
+    @Override
     public void run() {
         int contador = 2;
         boolean primo = true;
+        int numComprovar = inicio;
         
         
         for (int i = inicio; i <= fin; i++) {
-            System.out.println("Comprovamos " + i);
-                    while ((primo) && (contador != i)) {
-            if (i % contador == 0) {
+            while ((primo) && (contador != numComprovar)) {
+            if (numComprovar % contador == 0) {
                 primo = false;
             }
             contador++;
